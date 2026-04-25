@@ -131,15 +131,15 @@ nav.scrolled{background:rgba(8,8,8,.96);backdrop-filter:blur(24px);border-bottom
 .pcta{display:block;text-align:center;text-decoration:none}
 
 /* ========== FEATURES ========== */
-#features{padding:140px 0}
-.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:5px;overflow:hidden;margin-top:76px}
-.fc{background:var(--bg2);padding:44px 28px;transition:all .3s ease;position:relative;overflow:hidden}
+#features{padding:90px 0}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:5px;overflow:hidden;margin-top:48px}
+.fc{background:var(--bg2);padding:28px 22px;transition:all .3s ease;position:relative;overflow:hidden}
 .fc::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.05) 0%,transparent 60%);opacity:0;transition:opacity .3s}
 .fc:hover{background:var(--bg3)}.fc:hover::after{opacity:1}
-.fi{width:52px;height:52px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:22px;transition:all .3s}
+.fi{width:40px;height:40px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:14px;transition:all .3s}
 .fc:hover .fi{background:rgba(201,168,76,.16);border-color:var(--gold);box-shadow:0 0 18px var(--gold-g)}
-.ft{font-family:var(--ff);font-size:21px;letter-spacing:2px;margin-bottom:10px}
-.fd{font-size:12px;color:var(--t2);line-height:1.8;font-weight:300}
+.ft{font-family:var(--ff);font-size:16px;letter-spacing:2px;margin-bottom:7px}
+.fd{font-size:11.5px;color:var(--t2);line-height:1.65;font-weight:300}
 
 /* ========== APP ========== */
 #app{padding:140px 0;background:var(--bg2);position:relative;overflow:hidden}
@@ -183,18 +183,6 @@ nav.scrolled{background:rgba(8,8,8,.96);backdrop-filter:blur(24px);border-bottom
 .ss-c{font-size:9px;font-weight:600;color:var(--t1)}
 .ss.g .ss-c{color:var(--gold)}.ss.r .ss-c{color:var(--red)}
 
-/* ========== TEAM ========== */
-#team{padding:140px 0;background:var(--bg2)}
-.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:76px}
-.tc{background:var(--bg3);border:1px solid var(--border);border-radius:5px;overflow:hidden;transition:all .3s}
-.tc:hover{border-color:rgba(201,168,76,.28);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
-.tph{aspect-ratio:1;background:var(--bg4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.tph::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.04) 0%,transparent 50%)}
-.tph-p{font-size:56px;opacity:.2}
-.ti{padding:22px}
-.tn{font-family:var(--ff);font-size:19px;letter-spacing:2px;margin-bottom:5px}
-.tr{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.tb{font-size:12px;color:var(--t2);line-height:1.75;font-weight:300}
 
 /* ========== CONTACT ========== */
 #contact{padding:140px 0;position:relative;overflow:hidden}
@@ -252,14 +240,13 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 @media(max-width:1024px){
   .fgrid{grid-template-columns:repeat(2,1fr)}
   .ftop{grid-template-columns:1fr 1fr;gap:36px}
-  .tgrid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .nlinks{display:none}.burger{display:flex}
   .agrid{grid-template-columns:1fr;gap:44px}.avis{order:-1}
   .pgrid{grid-template-columns:1fr;max-width:380px}
   .pc.feat{transform:scale(1)}
-  .fgrid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:repeat(2,1fr)}
   .agr2{grid-template-columns:1fr;gap:56px}
   .scgrid{grid-template-columns:repeat(3,1fr)}
   .cgrid{grid-template-columns:1fr;gap:44px}
@@ -274,15 +261,48 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 @media(max-width:480px){
   .hctas{flex-direction:column;align-items:center}
   .scgrid{grid-template-columns:repeat(2,1fr)}
-  .tgrid{grid-template-columns:1fr}
   .apil{grid-template-columns:1fr}
   .cform{padding:28px 22px}
 }
 
-/* IG GALLERY */
-.ig-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
-.ig-wrap{overflow:hidden;border-radius:6px}
-@media(max-width:640px){.ig-grid{grid-template-columns:1fr}}
+/* ========== SOCIAL / FOLLOW THE PACK ========== */
+.soc-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.soc-pill{display:flex;align-items:center;gap:8px;padding:9px 18px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:100px;color:var(--t2);text-decoration:none;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .25s}
+.soc-pill:hover{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.06);color:var(--gold)}
+.sg-outer{position:relative;margin-top:52px}
+.sg-track{display:flex;gap:14px;overflow-x:scroll;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+.sg-track::-webkit-scrollbar{display:none}
+.sg-card{flex:0 0 calc(33.333% - 10px);scroll-snap-align:start;position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);transition:border-color .3s}
+.sg-card:hover{border-color:rgba(201,168,76,.3)}
+.sg-img{width:100%;aspect-ratio:3/4;display:block;transition:transform .4s}
+.sg-card:hover .sg-img{transform:scale(1.03)}
+.sg-badge{position:absolute;top:10px;left:10px;padding:3px 8px;border-radius:3px;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.7);backdrop-filter:blur(6px)}
+.sg-badge.reel{color:#ff6b6b}
+.sg-badge.video{color:#5bc8ff}
+.sg-badge.carousel{color:var(--gold)}
+.sg-overlay{position:absolute;bottom:0;left:0;right:0;padding:20px 14px 14px;background:linear-gradient(transparent,rgba(0,0,0,.9))}
+.sg-stats{display:flex;gap:12px;margin-bottom:7px}
+.sg-stat{font-size:11px;color:rgba(255,255,255,.7)}
+.sg-cap{font-size:11px;color:rgba(255,255,255,.6);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sg-nav{display:flex;gap:10px;justify-content:center;margin-top:28px}
+.sg-btn{width:46px;height:46px;border-radius:2px;background:transparent;border:1px solid var(--border);color:var(--t2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s}
+.sg-btn:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 14px var(--gold-g)}
+.sg-btn:disabled{opacity:.2;pointer-events:none}
+@media(min-width:768px) and (max-width:1023px){.sg-card{flex:0 0 calc(50% - 7px)}}
+@media(max-width:767px){
+  #social{padding:64px 0 52px}
+  .soc-links{gap:7px;margin-top:22px}
+  .soc-pill{padding:7px 13px;font-size:10px;letter-spacing:1px}
+  .sg-track{gap:10px;margin:0 -28px;padding:0 16px 4px}
+  .sg-card{flex:0 0 200px;height:264px}
+  .sg-img{width:100%;height:100%;aspect-ratio:unset}
+  .sg-cap{font-size:10px}
+  .sg-stat{font-size:9.5px}
+  .sg-nav{display:none}
+  .fc{padding:20px 14px}
+  .ft{font-size:14px;letter-spacing:1.5px}
+  .fd{font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -294,7 +314,6 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <a href="#membership" onclick="cMM()">Membership</a>
   <a href="#features" onclick="cMM()">Features</a>
   <a href="#schedule" onclick="cMM()">Schedule</a>
-  <a href="#team" onclick="cMM()">Team</a>
   <a href="#contact" onclick="cMM()">Contact</a>
   <a href="#membership" class="btn btn-g" onclick="cMM()" style="margin-top:12px">Join Now</a>
 </div>
@@ -311,7 +330,6 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         <li><a href="#membership">Membership</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#membership" class="ncta">Join Now</a></li>
       </ul>
@@ -359,32 +377,130 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   </div>
 </div>
 
-<!-- SOCIAL GALLERY -->
-<section id="social" style="padding:120px 0;background:var(--bg);overflow:hidden">
+<!-- SOCIAL / FOLLOW THE PACK -->
+<section id="social" style="padding:100px 0 80px;background:var(--bg2)">
   <div class="c">
     <div class="sh">
-      <span class="lbl rv">On The Gram</span>
+      <span class="lbl rv">Stay Connected</span>
       <div class="gline rv d1" style="margin:0 auto 24px"></div>
       <h2 class="rv d1">FOLLOW THE <span class="gt">PACK</span></h2>
-      <p class="rv d2">
-        <a href="https://instagram.com/wolfgyms_houston" target="_blank" style="color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:1px">@wolfgyms_houston</a>
-        &nbsp;&mdash; Spring, TX&#39;s next elite gym
-      </p>
+      <p class="rv d2">Join the Wolf Gym community. Daily motivation, behind-the-scenes training, and exclusive drops.</p>
     </div>
-    <div class="ig-grid rv">
-      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTbP2Kojtmt/" data-instgrm-version="14" style="background:#111;border:1px solid rgba(201,168,76,0.15)!important;border-radius:6px;margin:0!important;min-width:0!important;width:100%!important"></blockquote></div>
-      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DL95FoUOtf9/" data-instgrm-version="14" style="background:#111;border:1px solid rgba(201,168,76,0.15)!important;border-radius:6px;margin:0!important;min-width:0!important;width:100%!important"></blockquote></div>
-      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTMFa2zDguf/" data-instgrm-version="14" style="background:#111;border:1px solid rgba(201,168,76,0.15)!important;border-radius:6px;margin:0!important;min-width:0!important;width:100%!important"></blockquote></div>
-      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSVdnookZNY/" data-instgrm-version="14" style="background:#111;border:1px solid rgba(201,168,76,0.15)!important;border-radius:6px;margin:0!important;min-width:0!important;width:100%!important"></blockquote></div>
+    <div class="soc-links rv d2">
+      <a href="https://instagram.com/wolfgyms_houston" target="_blank" class="soc-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://tiktok.com/@wolfgyms_houston" target="_blank" class="soc-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+        TikTok
+      </a>
+      <a href="https://youtube.com/@wolfgyms_houston" target="_blank" class="soc-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="https://x.com/wolfgyms_houston" target="_blank" class="soc-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.734-8.849L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        X
+      </a>
     </div>
-    <div style="text-align:center;margin-top:52px" class="rv d1">
+    <div class="sg-outer rv d3">
+      <div class="sg-track" id="sg-track">
+        <div class="sg-card" style="background:linear-gradient(170deg,#1d1d1d,#131313)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-1.jpg"> -->
+          <span class="sg-badge reel">REEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 1.2K</span><span class="sg-stat">💬 48</span></div>
+            <div class="sg-cap">Monday grind hits different when the pack shows up early. No excuses, just reps.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#1e1c13,#141208)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-2.jpg"> -->
+          <span class="sg-badge carousel">CAROUSEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 874</span><span class="sg-stat">💬 31</span></div>
+            <div class="sg-cap">New equipment just dropped. Spring's most elite training floor is almost ready.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#13181d,#0c1014)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-3.jpg"> -->
+          <span class="sg-badge video">VIDEO</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 2.1K</span><span class="sg-stat">💬 95</span></div>
+            <div class="sg-cap">Behind the build. Watch the floor come to life — this is what we've been working toward.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#1d1d1d,#131313)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-4.jpg"> -->
+          <span class="sg-badge reel">REEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 643</span><span class="sg-stat">💬 22</span></div>
+            <div class="sg-cap">5am. No crowd. Full rack. This is why Wolf members train at a different level.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#1e1c13,#141208)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-5.jpg"> -->
+          <span class="sg-badge carousel">CAROUSEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 987</span><span class="sg-stat">💬 54</span></div>
+            <div class="sg-cap">Founder members only. First access, founder pricing, locked in for life. 🐺</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#1d1d1d,#131313)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-6.jpg"> -->
+          <span class="sg-badge reel">REEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 1.5K</span><span class="sg-stat">💬 72</span></div>
+            <div class="sg-cap">Pack training Saturday. When you train with wolves, you stop training like a house pet.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#13181d,#0c1014)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-7.jpg"> -->
+          <span class="sg-badge video">VIDEO</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 3.4K</span><span class="sg-stat">💬 118</span></div>
+            <div class="sg-cap">Opening day announcement. Spring, TX — we're coming in hot. April 2025.</div>
+          </div>
+        </div>
+        <div class="sg-card" style="background:linear-gradient(170deg,#1e1c13,#141208)">
+          <div class="sg-img"></div><!-- swap: <img class="sg-img" src="/images/social/post-8.jpg"> -->
+          <span class="sg-badge carousel">CAROUSEL</span>
+          <div class="sg-overlay">
+            <div class="sg-stats"><span class="sg-stat">♥ 712</span><span class="sg-stat">💬 29</span></div>
+            <div class="sg-cap">Wolf Circuit — every Saturday 11am. High intensity. Pack energy. Zero mercy.</div>
+          </div>
+        </div>
+      </div>
+      <div class="sg-nav">
+        <button class="sg-btn" id="sg-prev" disabled aria-label="Previous">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="sg-btn" id="sg-next" aria-label="Next">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="rv d2">
       <a href="https://instagram.com/wolfgyms_houston" target="_blank" class="btn btn-o">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         Follow @wolfgyms_houston
       </a>
     </div>
   </div>
-  <script async src="//www.instagram.com/embed.js"></script>
+  <script>
+  (function(){
+    var track=document.getElementById('sg-track');
+    var prev=document.getElementById('sg-prev');
+    var next=document.getElementById('sg-next');
+    if(!track||!prev||!next) return;
+    function cw(){var c=track.querySelector('.sg-card');return c?c.offsetWidth+14:0;}
+    function upd(){prev.disabled=track.scrollLeft<=2;next.disabled=track.scrollLeft>=track.scrollWidth-track.clientWidth-2;}
+    prev.addEventListener('click',function(){track.scrollBy({left:-cw(),behavior:'smooth'});});
+    next.addEventListener('click',function(){track.scrollBy({left:cw(),behavior:'smooth'});});
+    track.addEventListener('scroll',upd,{passive:true});
+    upd();
+  })();
+  </script>
 </section>
 
 <div style="height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)"></div>
@@ -595,38 +711,6 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   </div>
 </section>
 
-<div style="height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)"></div>
-
-<!-- TEAM -->
-<section id="team">
-  <div class="c">
-    <div class="sh">
-      <span class="lbl rv">The Coaches</span>
-      <div class="gline rv d1" style="margin:0 auto 24px"></div>
-      <h2 class="rv d1">MEET THE <span class="gt">PACK</span></h2>
-      <p class="rv d2">Our coaches are athletes first. Every trainer at Wolf Gym has walked the path they're asking you to walk.</p>
-    </div>
-    <div class="tgrid">
-      <div class="tc rv d1">
-        <div class="tph"><div class="tph-p">🐺</div></div>
-        <div class="ti"><div class="tn">HEAD COACH</div><div class="tr">Founder &amp; Lead Trainer</div><div class="tb">15+ years in competitive strength training. Certified NSCA-CSCS. Built Wolf Gym from the ground up to give Houston's best a place to train at their level.</div></div>
-      </div>
-      <div class="tc rv d2">
-        <div class="tph"><div class="tph-p">🔥</div></div>
-        <div class="ti"><div class="tn">HIIT COACH</div><div class="tr">Conditioning Specialist</div><div class="tb">Former collegiate athlete. Specializes in metabolic conditioning and functional fitness. Makes every class harder than you thought possible — and worth it.</div></div>
-      </div>
-      <div class="tc rv d3">
-        <div class="tph"><div class="tph-p">⚡</div></div>
-        <div class="ti"><div class="tn">STRENGTH COACH</div><div class="tr">Powerlifting &amp; Performance</div><div class="tb">Competitive powerlifter with 3 state records. Expert in periodization and peak performance programming. Your numbers will go up. Guaranteed.</div></div>
-      </div>
-      <div class="tc rv d4">
-        <div class="tph"><div class="tph-p">🏆</div></div>
-        <div class="ti"><div class="tn">RECOVERY COACH</div><div class="tr">Mobility &amp; Injury Prevention</div><div class="tb">Licensed physical therapist turned performance coach. Ensures the pack stays healthy, mobile, and training at full capacity year-round.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="c">
@@ -703,7 +787,6 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
           <li><a href="#membership">Membership Plans</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#schedule">Class Schedule</a></li>
-          <li><a href="#team">Our Coaches</a></li>
         </ul>
       </div>
       <div class="fc2">
